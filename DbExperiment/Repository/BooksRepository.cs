@@ -18,5 +18,17 @@ namespace DbExperiment.Repository
             _db = db;
         }
 
+        public void Update(Books books)
+        {
+            var objFromDb = _db.Books.FirstOrDefault(s => s.Id == books.Id);
+            if (objFromDb != null)
+            {
+                objFromDb.ISBN = books.ISBN;
+                objFromDb.Price = books.Price;
+                objFromDb.Title = books.Title;
+                objFromDb.Category = books.Category;
+                _db.SaveChanges();
+            }
+        }
     }
 }

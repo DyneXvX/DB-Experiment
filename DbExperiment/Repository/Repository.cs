@@ -22,37 +22,59 @@ namespace DbExperiment.Repository
         }
         public T Get(int id)
         {
-            throw new NotImplementedException();
+            return DbSet.Find(id);
         }
 
-        public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, 
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = null)
         {
-            throw new NotImplementedException();
+            IQueryable<T> query = DbSet;
+
+            if (filter != null) query = query.Where(filter);
+
+            if (includeProperties != null)
+                foreach (var includeProp in includeProperties.Split(new[] { ',' },
+                    StringSplitOptions.RemoveEmptyEntries))
+                    query = query.Include(includeProp);
+
+            if (orderBy != null) return orderBy(query).ToList();
+
+            return query.ToList();
         }
 
         public T GetFirstOrDefault(Expression<Func<T, bool>> filter = null, string includeProperties = null)
         {
-            throw new NotImplementedException();
+            IQueryable<T> query = DbSet;
+
+            if (filter != null) query = query.Where(filter);
+
+            if (includeProperties != null)
+                foreach (var includeProp in includeProperties.Split(new[] { ',' },
+                    StringSplitOptions.RemoveEmptyEntries))
+                    query = query.Include(includeProp);
+
+            return query.FirstOrDefault();
         }
 
         public void Add(T entity)
         {
-            throw new NotImplementedException();
+            DbSet.Add(entity);
         }
 
         public void Remove(int id)
         {
-            throw new NotImplementedException();
+            var entity = DbSet.Find(id);
+            Remove(entity);
         }
 
         public void Remove(T entity)
         {
-            throw new NotImplementedException();
+            DbSet.Remove(entity);
         }
 
         public void RemoveRange(IEnumerable<T> entity)
         {
-            throw new NotImplementedException();
+            DbSet.RemoveRange(entity);
         }
     }
 }
