@@ -41,7 +41,7 @@ namespace DbExperiment.Repository
 
             return query.ToList();
         }
-
+        //
         public T GetFirstOrDefault(Expression<Func<T, bool>> filter = null, string includeProperties = null)
         {
             IQueryable<T> query = DbSet;
