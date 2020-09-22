@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DbExperiment.Repository.IRepository
 {
-    public interface IBooksRepository : IRepository<Books>
+    public interface IBooksRepository 
     {
 
         void Update(Books books);

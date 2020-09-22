@@ -9,11 +9,11 @@ using DbExperiment.Repository.IRepository;
 
 namespace DbExperiment.Repository
 {
-    public class BooksRepository : Repository<Books>, IBooksRepository
+    public class BooksRepository : IBooksRepository
     {
         private readonly ApplicationDbContext _db;
 
-        public BooksRepository(ApplicationDbContext db) : base(db)
+        public BooksRepository(ApplicationDbContext db) 
         {
             _db = db;
         }
