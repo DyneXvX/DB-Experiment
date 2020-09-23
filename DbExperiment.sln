@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbExperiment", "DbExperiment\DbExperiment.csproj", "{5AD72965-1A9A-4781-A43A-3658CC210412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbExperiment", "DbExperiment\DbExperiment.csproj", "{5AD72965-1A9A-4781-A43A-3658CC210412}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbExperiment.DataAccess", "DbExperiment.DataAccess\DbExperiment.DataAccess.csproj", "{1B161AA4-3953-46EA-96D3-E86B2C230F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbExperiment.Models", "DbExperiment.Models\DbExperiment.Models.csproj", "{EAFDB686-1578-45ED-9F5C-7B84663CAD47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbExperiment.Test", "DbExperiment.Test\DbExperiment.Test.csproj", "{84EB0CD5-C551-4B3C-8F0E-E62884142C1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbExperiment.Utility", "DbExperiment.Utility\DbExperiment.Utility.csproj", "{8E86A48D-8EF9-424E-A6B7-923EFE7B0E5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{5AD72965-1A9A-4781-A43A-3658CC210412}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AD72965-1A9A-4781-A43A-3658CC210412}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AD72965-1A9A-4781-A43A-3658CC210412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B161AA4-3953-46EA-96D3-E86B2C230F8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B161AA4-3953-46EA-96D3-E86B2C230F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B161AA4-3953-46EA-96D3-E86B2C230F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B161AA4-3953-46EA-96D3-E86B2C230F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFDB686-1578-45ED-9F5C-7B84663CAD47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFDB686-1578-45ED-9F5C-7B84663CAD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFDB686-1578-45ED-9F5C-7B84663CAD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFDB686-1578-45ED-9F5C-7B84663CAD47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84EB0CD5-C551-4B3C-8F0E-E62884142C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84EB0CD5-C551-4B3C-8F0E-E62884142C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84EB0CD5-C551-4B3C-8F0E-E62884142C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84EB0CD5-C551-4B3C-8F0E-E62884142C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E86A48D-8EF9-424E-A6B7-923EFE7B0E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E86A48D-8EF9-424E-A6B7-923EFE7B0E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E86A48D-8EF9-424E-A6B7-923EFE7B0E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E86A48D-8EF9-424E-A6B7-923EFE7B0E5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
