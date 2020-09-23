@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using DbExperiment.Data;
+using DbExperiment.DataAccess.Repository.IRepository;
 using DbExperiment.Models;
-using DbExperiment.Repository.IRepository;
+using Microsoft.EntityFrameworkCore;
 
-namespace DbExperiment.Repository
+namespace DbExperiment.DataAccess.Repository
 {
     public class BooksRepository : IBooksRepository
     {
@@ -18,17 +15,21 @@ namespace DbExperiment.Repository
             _db = db;
         }
 
-        public void Update(Books books)
+        public async Task<int> Update(Books books)
         {
-            var objFromDb = _db.Books.FirstOrDefault(s => s.Id == books.Id);
+            var objFromDb = await _db.Books.FirstOrDefaultAsync(s => s.Id == books.Id);
+
             if (objFromDb != null)
             {
                 objFromDb.ISBN = books.ISBN;
                 objFromDb.Price = books.Price;
                 objFromDb.Title = books.Title;
                 objFromDb.Category = books.Category;
-                _db.SaveChanges();
+                
             }
+
+            return await _db.SaveChangesAsync();
+
         }
     }
 }
