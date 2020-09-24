@@ -4,7 +4,7 @@
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/paragonxvx/databases/Db-Experiment",
       "type": "mssql.azure",
       "connectionId": "DefaultConnection",
-      "secretStore": "LocalSecretsFile"
+      "secretStore": "AzureAppSettings"
     }
   }
 }
