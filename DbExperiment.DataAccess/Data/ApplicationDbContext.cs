@@ -15,6 +15,10 @@ namespace DbExperiment.Data
         }
 
         public DbSet<Books> Books { get; set; }
+        public DbSet<Categories> Categories { get; set; }
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
+        public DbSet<AdminUser> AdminUser { get; set; }
+
 
     }
 }
