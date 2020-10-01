@@ -31,6 +31,7 @@ namespace DbExperiment
             }
 
             builder.Run();
+            //finish setup
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args)
