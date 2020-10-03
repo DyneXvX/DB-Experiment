@@ -28,7 +28,7 @@ namespace DbExperiment
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                    Configuration.GetConnectionString("SQLDatabase")));
             services.AddDefaultIdentity<IdentityUser>(configure =>
                     {
                         configure.Password.RequireNonAlphanumeric = false;
