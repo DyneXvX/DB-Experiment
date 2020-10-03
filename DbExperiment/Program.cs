@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Serilog; //required for proper logging!
+/*using Serilog; //required for proper logging!*/
 
 namespace DbExperiment
 {
@@ -26,7 +26,7 @@ namespace DbExperiment
                 }
                 catch (Exception ex)
                 {
-                    Log.Error("Fuck up on DB Justin", ex);
+                   /* Log.Error("Fuck up on DB Justin", ex);*/
                 }
             }
 
