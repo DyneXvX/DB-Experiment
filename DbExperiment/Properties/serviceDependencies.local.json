@@ -1,15 +1,18 @@
 {
   "dependencies": {
-    "mssql1": {
-      "resourceId": null,
-      "type": "mssql.local",
-      "connectionId": "DefaultConnection",
-      "secretStore": "LocalSecretsFile"
+    "secrets1": {
+      "type": "secrets.user"
     },
     "mssql2": {
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/paragonxvx/databases/DbExperiment",
       "type": "mssql.azure",
       "connectionId": "SQLDatabase",
+      "secretStore": "LocalSecretsFile"
+    },
+    "mssql1": {
+      "resourceId": null,
+      "type": "mssql.local",
+      "connectionId": "DefaultConnection",
       "secretStore": "LocalSecretsFile"
     }
   }
