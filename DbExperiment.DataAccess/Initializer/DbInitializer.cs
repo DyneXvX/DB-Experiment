@@ -27,6 +27,8 @@ namespace DbExperiment.DataAccess.Initializer
 
         public void Initialize()
         {
+            if(_db.Roles.Any(r =>r.Name == Constants.RoleAdmin)) return;
+
             _roleManager.CreateAsync(new IdentityRole(Constants.RoleAdmin)).GetAwaiter().GetResult();
             _roleManager.CreateAsync(new IdentityRole(Constants.RoleManager)).GetAwaiter().GetResult();
             _roleManager.CreateAsync(new IdentityRole(Constants.RoleUser)).GetAwaiter().GetResult();
