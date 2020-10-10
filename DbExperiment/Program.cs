@@ -4,7 +4,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-/*using Serilog; //required for proper logging!*/
+using Serilog;
+
 
 namespace DbExperiment
 {
@@ -24,9 +25,9 @@ namespace DbExperiment
                     var context = services.GetRequiredService<ApplicationDbContext>();
                     context.Database.Migrate();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                   /* Log.Error("Fuck up on DB Justin", ex);*/
+                    Log.Error("Fuck up on DB Justin", ex);
                 }
             }
 
