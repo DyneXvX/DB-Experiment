@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using DbExperiment.Data;
+using DbExperiment.DataAccess.Initializer;
 
 namespace DbExperiment
 {
@@ -37,6 +38,7 @@ namespace DbExperiment
                 .AddDefaultTokenProviders() //not using Email Sender for this.
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            services.AddScoped<IDbInitializer, DbInitializer>();
             services.AddRazorPages();
                 
         }

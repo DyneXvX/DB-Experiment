@@ -101,26 +101,7 @@ namespace DbExperiment.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-                    
-                    //check if roles are created if not, created them
-                    if (!await _roleManager.RoleExistsAsync(Constants.RoleAdmin))
-                    {
-                        await _roleManager.CreateAsync(new IdentityRole(Constants.RoleAdmin));
-                    }
-                    if (!await _roleManager.RoleExistsAsync(Constants.RoleEmployee))
-                    {
-                        await _roleManager.CreateAsync(new IdentityRole(Constants.RoleEmployee));
-                    }
-                    if (!await _roleManager.RoleExistsAsync(Constants.RoleManager))
-                    {
-                        await _roleManager.CreateAsync(new IdentityRole(Constants.RoleManager));
-                    }
-                    if (!await _roleManager.RoleExistsAsync(Constants.RoleUser))
-                    {
-                        await _roleManager.CreateAsync(new IdentityRole(Constants.RoleUser));
-                    }
 
-                    //first sign in
                     await _userManager.AddToRoleAsync(user, Constants.RoleAdmin);
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
