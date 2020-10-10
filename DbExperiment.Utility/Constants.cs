@@ -11,6 +11,7 @@ namespace DbExperiment.Utility
         public const string RoleUser = "User";
         public const string RoleAdmin = "Admin";
         public const string RoleEmployee = "Employee";
+        public const string RoleManager = "Manager";
 
     }
 }

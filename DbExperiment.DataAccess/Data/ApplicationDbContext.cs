@@ -19,6 +19,8 @@ namespace DbExperiment.Data
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
         public DbSet<AdminUser> AdminUser { get; set; }
 
+        public DbSet<ManagerUser> ManagerUser { get; set; }
+
 
     }
 }
