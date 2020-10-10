@@ -5,12 +5,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 
 namespace DbExperiment.Models
 {
-    public class AdminUser
+    public class AdminUser : IdentityUser
     {
-        public int Id { get; set; }
+        
         [Required]
         [Display(Name ="First Name")]
         public string FirstName { get; set; }

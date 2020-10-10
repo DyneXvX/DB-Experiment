@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using DbExperiment.Models;
+using DbExperiment.Utility;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -22,18 +24,20 @@ namespace DbExperiment.Areas.Identity.Pages.Account
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
-        private readonly IEmailSender _emailSender;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
         public RegisterAdminModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            RoleManager<IdentityRole> roleManager
+            )
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
-            _emailSender = emailSender;
+            _roleManager = roleManager;
+
         }
 
         [BindProperty]
@@ -45,6 +49,14 @@ namespace DbExperiment.Areas.Identity.Pages.Account
 
         public class InputModel
         {
+            [Required] 
+            [Display(Name = "First Name")]
+            public string FirstName { get; set; }
+
+            [Required] 
+            [Display(Name = "Last Name")]
+            public string LastName { get; set; }
+
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
@@ -60,6 +72,8 @@ namespace DbExperiment.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            public string Role { get; set; }
         }
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -74,22 +88,40 @@ namespace DbExperiment.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
+                var user = new AdminUser
+                {
+                    UserName = Input.FirstName,
+                    Email = Input.Email,
+                    FirstName = Input.FirstName,
+                    LastName = Input.LastName,
+                    Role = Input.Role
+
+                };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
+                    
+                    //check if roles are created if not, created them
+                    if (!await _roleManager.RoleExistsAsync(Constants.RoleAdmin))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(Constants.RoleAdmin));
+                    }
+                    if (!await _roleManager.RoleExistsAsync(Constants.RoleEmployee))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(Constants.RoleEmployee));
+                    }
+                    if (!await _roleManager.RoleExistsAsync(Constants.RoleManager))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(Constants.RoleManager));
+                    }
+                    if (!await _roleManager.RoleExistsAsync(Constants.RoleUser))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(Constants.RoleUser));
+                    }
 
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
-                        pageHandler: null,
-                        values: new { area = "Identity", userId = user.Id, code = code, returnUrl = returnUrl },
-                        protocol: Request.Scheme);
-
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    //first sign in
+                    await _userManager.AddToRoleAsync(user, Constants.RoleAdmin);
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
