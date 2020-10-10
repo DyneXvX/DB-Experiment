@@ -29,7 +29,7 @@ namespace DbExperiment
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                    Configuration.GetConnectionString("SQLDatabase")));
             services.AddIdentity<IdentityUser, IdentityRole>(configure =>
                     {
                         configure.Password.RequireNonAlphanumeric = false;
