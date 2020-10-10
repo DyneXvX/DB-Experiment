@@ -27,7 +27,7 @@ namespace DbExperiment.DataAccess.Initializer
 
         public void Initialize()
         {
-            if(_db.Roles.Any(r =>r.Name == Constants.RoleAdmin)) return;
+            //if(_db.Roles.Any(r =>r.Name == Constants.RoleAdmin)) return;
 
             _roleManager.CreateAsync(new IdentityRole(Constants.RoleAdmin)).GetAwaiter().GetResult();
             _roleManager.CreateAsync(new IdentityRole(Constants.RoleManager)).GetAwaiter().GetResult();
@@ -36,11 +36,11 @@ namespace DbExperiment.DataAccess.Initializer
 
             _userManager.CreateAsync(new AdminUser
             {
-                UserName = "Admin",
-                Email = "admin@gmail.com",
+                UserName = "admin@gmail.com",
+                Email = "admin@gmail.com"
 
 
-            }, "Admin123").GetAwaiter().GetResult();
+            },"Admin123").GetAwaiter().GetResult();
 
             AdminUser user = _db.AdminUser.FirstOrDefault(u => u.Email == "admin@gmail.com");
 
