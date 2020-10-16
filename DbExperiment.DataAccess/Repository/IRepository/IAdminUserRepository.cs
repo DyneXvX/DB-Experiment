@@ -10,5 +10,7 @@ namespace DbExperiment.DataAccess.Repository.IRepository
     public interface IAdminUserRepository
     {
         Task<int> Update(AdminUser adminUser);
+
+        Task<int> Delete(AdminUser adminUser);
     }
 }

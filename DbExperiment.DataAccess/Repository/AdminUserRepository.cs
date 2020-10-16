@@ -19,6 +19,15 @@ namespace DbExperiment.DataAccess.Repository
             _db = db;
         }
 
+        public async Task<int> Delete(AdminUser adminUser)
+        {
+            var objFromDb = await _db.AdminUser.FindAsync(adminUser.Id);
+
+             _db.Remove(objFromDb);
+             return await _db.SaveChangesAsync();
+
+        }
+
         public async Task<int> Update(AdminUser adminUser)
         {
             var objFromDb = await _db.AdminUser.FirstOrDefaultAsync(s => s.Id == adminUser.Id);
