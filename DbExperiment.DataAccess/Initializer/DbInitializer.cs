@@ -36,11 +36,12 @@ namespace DbExperiment.DataAccess.Initializer
 
             _userManager.CreateAsync(new AdminUser
             {
-                UserName = "admin@gmail.com",
+                UserName = "Admin",
                 Email = "admin@gmail.com"
+                
 
 
-            },"Admin123").GetAwaiter().GetResult();
+            }, "Admin123").GetAwaiter().GetResult();
 
             AdminUser user = _db.AdminUser.FirstOrDefault(u => u.Email == "admin@gmail.com");
 
