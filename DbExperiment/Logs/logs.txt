@@ -1,0 +1,8 @@
+10/16/2020 16:46:02 Application Starting Up
+10/16/2020 16:46:04 Migrations Complete
+10/16/2020 16:46:04 Role "0423fcd2-cd02-4771-80b4-88807cdcb9f6" validation failed: "DuplicateRoleName".
+10/16/2020 16:46:04 Role "414c1221-274c-426f-a7c0-ef24cd6c6814" validation failed: "DuplicateRoleName".
+10/16/2020 16:46:04 Role "9a390009-e8a4-4479-8922-5f503c09d779" validation failed: "DuplicateRoleName".
+10/16/2020 16:46:04 Role "6edb0ee8-639c-4df6-b37c-cf4d68a0d575" validation failed: "DuplicateRoleName".
+10/16/2020 16:46:04 User "2c792e8c-2d83-404e-a210-fa752f42aa5b" validation failed: "DuplicateUserName".
+10/16/2020 16:46:05 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".

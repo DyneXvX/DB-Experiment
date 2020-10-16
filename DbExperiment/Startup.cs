@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using DbExperiment.Data;
 using DbExperiment.DataAccess.Initializer;
+using Serilog;
 
 namespace DbExperiment
 {
@@ -60,6 +61,8 @@ namespace DbExperiment
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseSerilogRequestLogging();
 
             app.UseRouting();
 
