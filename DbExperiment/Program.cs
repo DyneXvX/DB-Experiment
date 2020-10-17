@@ -18,15 +18,18 @@ namespace DbExperiment
         public static void Main(string[] args)
         {
             //Serilog
-            var configuration = new ConfigurationBuilder()
+            var config = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
                 .Build();
 
             Log.Logger = new LoggerConfiguration()
-                .ReadFrom.Configuration(configuration)
+                .ReadFrom.Configuration(config)
+                .WriteTo.Console()
                 .CreateLogger();
+            
 
             Log.Information("Application Starting Up");
+
 
             //auto apply migrations
             var builder = CreateHostBuilder(args).Build();
