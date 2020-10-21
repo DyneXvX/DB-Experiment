@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using DbExperiment.Data;
 using DbExperiment.Models;
+using Serilog;
 
 namespace DbExperiment.Areas.User.Controllers
 {
