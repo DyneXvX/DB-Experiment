@@ -6,3 +6,334 @@
 10/16/2020 16:46:04 Role "6edb0ee8-639c-4df6-b37c-cf4d68a0d575" validation failed: "DuplicateRoleName".
 10/16/2020 16:46:04 User "2c792e8c-2d83-404e-a210-fa752f42aa5b" validation failed: "DuplicateUserName".
 10/16/2020 16:46:05 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 21:33:52 Application Starting Up
+10/20/2020 21:33:56 Migrations Complete
+10/20/2020 21:33:57 Role "5ffa7b53-bd73-4132-a4bd-d8f62e7ad703" validation failed: "DuplicateRoleName".
+10/20/2020 21:33:57 Role "49bcf061-929c-4ce5-b416-c6ebaa5836d5" validation failed: "DuplicateRoleName".
+10/20/2020 21:33:57 Role "a93345a2-5e19-4db2-a53e-33e7eb1ffcd6" validation failed: "DuplicateRoleName".
+10/20/2020 21:33:57 Role "ca249408-41ad-4be1-98ed-2c14927ac2f2" validation failed: "DuplicateRoleName".
+10/20/2020 21:33:57 User "b0881792-ee98-40fb-883e-7ac6b7e7b745" validation failed: "DuplicateUserName".
+10/20/2020 21:33:57 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 21:33:58 HTTP "GET" "/" responded 200 in 284.0021 ms
+10/20/2020 21:34:10 HTTP "GET" "/Identity/Account/Login" responded 200 in 191.1408 ms
+10/20/2020 21:34:17 User logged in.
+10/20/2020 21:34:17 HTTP "POST" "/Identity/Account/Login" responded 302 in 374.4399 ms
+10/20/2020 21:34:17 HTTP "GET" "/" responded 200 in 14.5358 ms
+10/20/2020 21:50:06 Application Starting Up
+10/20/2020 21:50:09 Migrations Complete
+10/20/2020 21:50:09 Role "fd446cae-1f00-4921-8fec-7b37950cc821" validation failed: "DuplicateRoleName".
+10/20/2020 21:50:10 Role "0982a53d-3a77-4cfa-b62e-4a32cfb2bd7f" validation failed: "DuplicateRoleName".
+10/20/2020 21:50:10 Role "2dc3d83e-e1cb-412e-aafc-d8022f776d41" validation failed: "DuplicateRoleName".
+10/20/2020 21:50:10 Role "de675e06-3c03-4bf8-970f-162b6ad0f811" validation failed: "DuplicateRoleName".
+10/20/2020 21:50:10 User "45791a4e-a7bd-4f3a-8013-c3cf382c9872" validation failed: "DuplicateUserName".
+10/20/2020 21:50:10 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 21:50:11 HTTP "GET" "/" responded 200 in 283.5401 ms
+10/20/2020 21:50:43 HTTP "GET" "/ListUsers" responded 404 in 19.3919 ms
+10/20/2020 21:51:08 HTTP "GET" "/Admin/ListUsers" responded 404 in 16.5794 ms
+10/20/2020 21:51:24 HTTP "GET" "/Admin/Views/ListUsers" responded 404 in 3.3150 ms
+10/20/2020 21:51:50 Application Starting Up
+10/20/2020 21:51:53 Migrations Complete
+10/20/2020 21:51:54 Role "f2000a34-068f-414d-94ce-66c42a2942ee" validation failed: "DuplicateRoleName".
+10/20/2020 21:51:54 Role "65df5a83-1106-4fae-beb8-55f36cc7a792" validation failed: "DuplicateRoleName".
+10/20/2020 21:51:54 Role "b1dcbf09-0924-4573-9f22-eb9fc2d0d47d" validation failed: "DuplicateRoleName".
+10/20/2020 21:51:54 Role "578a4b9e-fea2-4b51-9986-83fcc3be7115" validation failed: "DuplicateRoleName".
+10/20/2020 21:51:54 User "5e3975f5-2a12-47c7-bd91-3db8d1807c69" validation failed: "DuplicateUserName".
+10/20/2020 21:51:54 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 21:51:55 HTTP "GET" "/" responded 200 in 293.7847 ms
+10/20/2020 21:51:58 HTTP "GET" "/User/Books" responded 200 in 219.7119 ms
+10/20/2020 21:52:43 HTTP "GET" "/Identity/Account/RegisterAdmin" responded 200 in 207.5233 ms
+10/20/2020 22:07:56 Application Starting Up
+10/20/2020 22:07:59 Migrations Complete
+10/20/2020 22:08:00 Role "c7d77fe3-1a7d-45ae-bde8-9d1534106ed0" validation failed: "DuplicateRoleName".
+10/20/2020 22:08:00 Role "a8b256b4-e9ed-44bc-ba42-008a38aa6ecc" validation failed: "DuplicateRoleName".
+10/20/2020 22:08:00 Role "dd21d194-d1ed-436f-a4e8-9b601735ddba" validation failed: "DuplicateRoleName".
+10/20/2020 22:08:00 Role "018c58a3-d1f7-45d7-91aa-181c5f5ff70a" validation failed: "DuplicateRoleName".
+10/20/2020 22:08:00 User "d3239113-8116-4ea6-ab24-9f756d2feba3" validation failed: "DuplicateUserName".
+10/20/2020 22:08:00 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:08:01 HTTP "GET" "/" responded 200 in 278.0397 ms
+10/20/2020 22:08:06 HTTP "GET" "/Identity/Account/Login" responded 200 in 180.1132 ms
+10/20/2020 22:08:15 User logged in.
+10/20/2020 22:08:15 HTTP "POST" "/Identity/Account/Login" responded 302 in 297.6379 ms
+10/20/2020 22:08:15 HTTP "GET" "/" responded 200 in 13.5457 ms
+10/20/2020 22:08:36 HTTP "GET" "/admin/ListUsers" responded 404 in 8.2307 ms
+10/20/2020 22:08:59 HTTP "GET" "/AdminController/ListUsers" responded 404 in 6.5223 ms
+10/20/2020 22:10:04 HTTP "GET" "/Admin/ListUsers" responded 404 in 1.8894 ms
+10/20/2020 22:10:19 HTTP "GET" "/Admin/ListAdmins" responded 404 in 2.4368 ms
+10/20/2020 22:10:21 HTTP "GET" "/Admin/ListAdmins" responded 404 in 1.6689 ms
+10/20/2020 22:13:46 Application Starting Up
+10/20/2020 22:13:49 Migrations Complete
+10/20/2020 22:13:50 Role "9763296c-90dd-4fdd-a0fe-3d5238a75ac7" validation failed: "DuplicateRoleName".
+10/20/2020 22:13:50 Role "0c9a0107-e1d5-44b1-85c7-09a9d1b27a4c" validation failed: "DuplicateRoleName".
+10/20/2020 22:13:50 Role "00efc932-bf2c-4e9a-b8a4-51e955973339" validation failed: "DuplicateRoleName".
+10/20/2020 22:13:50 Role "060379fd-0566-4b51-8817-6436f0b5b89b" validation failed: "DuplicateRoleName".
+10/20/2020 22:13:50 User "58a0748b-8e64-4176-937f-a54d1250c044" validation failed: "DuplicateUserName".
+10/20/2020 22:13:50 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:13:51 HTTP "GET" "/" responded 200 in 329.7624 ms
+10/20/2020 22:14:10 HTTP "GET" "/Admin/ListAdmins" responded 404 in 11.9483 ms
+10/20/2020 22:14:14 HTTP "GET" "/Admin/ListAdmins" responded 404 in 18.9104 ms
+10/20/2020 22:14:16 HTTP "GET" "/Admin/ListAdmins" responded 404 in 3.9816 ms
+10/20/2020 22:14:24 HTTP "GET" "/ListAdmins" responded 404 in 2.5759 ms
+10/20/2020 22:14:46 HTTP "GET" "/Admin" responded 404 in 5.4344 ms
+10/20/2020 22:16:16 Application Starting Up
+10/20/2020 22:16:19 Migrations Complete
+10/20/2020 22:16:20 Role "dd46ddc5-f0d2-48fe-974a-68c452e3160b" validation failed: "DuplicateRoleName".
+10/20/2020 22:16:20 Role "b00039b4-b9bb-4a8a-8ea9-e96d275a8893" validation failed: "DuplicateRoleName".
+10/20/2020 22:16:20 Role "e6c27bc6-6282-4567-b75c-5b16370f8f5e" validation failed: "DuplicateRoleName".
+10/20/2020 22:16:20 Role "d7c8d03e-50e5-45dd-95b4-b8860d149dd0" validation failed: "DuplicateRoleName".
+10/20/2020 22:16:20 User "405a3ea1-d5e0-400e-b0c3-5e2e2117afd4" validation failed: "DuplicateUserName".
+10/20/2020 22:16:20 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:16:21 HTTP "GET" "/" responded 200 in 281.4185 ms
+10/20/2020 22:16:27 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 8.0270 ms
+10/20/2020 22:16:31 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 16.3178 ms
+10/20/2020 22:16:37 HTTP "GET" "/Admin/ListAdmins" responded 404 in 3.8753 ms
+10/20/2020 22:18:56 Application Starting Up
+10/20/2020 22:18:59 Migrations Complete
+10/20/2020 22:19:00 Role "6ff144d7-2356-404c-980c-be4c2ec4b14b" validation failed: "DuplicateRoleName".
+10/20/2020 22:19:00 Role "10895411-3c73-4d3b-821c-9ccaa9d40b06" validation failed: "DuplicateRoleName".
+10/20/2020 22:19:00 Role "187af494-46ce-41e9-b4ef-55d4e44cc37f" validation failed: "DuplicateRoleName".
+10/20/2020 22:19:00 Role "3dcb40a1-dca6-4e8c-8546-81fc5d4a25f1" validation failed: "DuplicateRoleName".
+10/20/2020 22:19:00 User "ff2ca2b7-ab40-498c-aeaf-9a0aeaf45a7a" validation failed: "DuplicateUserName".
+10/20/2020 22:19:00 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:19:01 HTTP "GET" "/" responded 200 in 302.0532 ms
+10/20/2020 22:19:03 HTTP "GET" "/User/Admin/ListAdmins" responded 404 in 13.7910 ms
+10/20/2020 22:24:23 Application Starting Up
+10/20/2020 22:24:25 Migrations Complete
+10/20/2020 22:24:26 Role "7b246196-e103-4b90-9dfd-ce19919b150f" validation failed: "DuplicateRoleName".
+10/20/2020 22:24:26 Role "bc9b9cbf-e0c0-4e85-9823-fe95b33e6d9d" validation failed: "DuplicateRoleName".
+10/20/2020 22:24:26 Role "f282dcd8-0a14-46b1-a2f1-ef42f3dc14da" validation failed: "DuplicateRoleName".
+10/20/2020 22:24:26 Role "14e4e451-f21a-4f1a-b0e1-77864dcd08f7" validation failed: "DuplicateRoleName".
+10/20/2020 22:24:26 User "526e90f6-9707-4e06-a298-92257d1eb2f6" validation failed: "DuplicateUserName".
+10/20/2020 22:24:26 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:24:27 HTTP "GET" "/" responded 200 in 294.7686 ms
+10/20/2020 22:24:29 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 7.9703 ms
+10/20/2020 22:25:09 Application Starting Up
+10/20/2020 22:25:11 Migrations Complete
+10/20/2020 22:25:12 Role "e0569861-4335-473e-a096-cc0bd5de0a40" validation failed: "DuplicateRoleName".
+10/20/2020 22:25:12 Role "77c3b17a-6f4e-40c6-904d-eb27942a4953" validation failed: "DuplicateRoleName".
+10/20/2020 22:25:12 Role "ff02abe1-c611-45f2-bee2-38838f51446f" validation failed: "DuplicateRoleName".
+10/20/2020 22:25:12 Role "1a15cfc6-ce8c-4deb-8963-2c9831cbbe3a" validation failed: "DuplicateRoleName".
+10/20/2020 22:25:12 User "68c68796-b8fe-4cb3-a442-edf40ed21915" validation failed: "DuplicateUserName".
+10/20/2020 22:25:12 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:25:13 HTTP "GET" "/" responded 200 in 282.4001 ms
+10/20/2020 22:25:15 HTTP "GET" "/User/Admin/ListAdmins" responded 404 in 7.6420 ms
+10/20/2020 22:26:09 Application Starting Up
+10/20/2020 22:26:11 Migrations Complete
+10/20/2020 22:26:12 Role "f6be4b76-660c-4b1c-8638-0dc1c243c627" validation failed: "DuplicateRoleName".
+10/20/2020 22:26:12 Role "2e7c6b0c-2725-434d-a5dc-ac0b5eefd0ba" validation failed: "DuplicateRoleName".
+10/20/2020 22:26:12 Role "7c20526d-9db1-4712-8cf2-b6f834a0f815" validation failed: "DuplicateRoleName".
+10/20/2020 22:26:12 Role "96315d9d-320a-4b45-b1bf-6be0b59be161" validation failed: "DuplicateRoleName".
+10/20/2020 22:26:12 User "c237481d-5a1d-4fd6-8355-f06320a8b8a7" validation failed: "DuplicateUserName".
+10/20/2020 22:26:12 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:26:13 HTTP "GET" "/" responded 200 in 280.0703 ms
+10/20/2020 22:26:15 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 6.9919 ms
+10/20/2020 22:26:28 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 17.1048 ms
+10/20/2020 22:26:30 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 2.9103 ms
+10/20/2020 22:26:38 HTTP "GET" "/Admin/ListAdmins" responded 404 in 3.3750 ms
+10/20/2020 22:26:58 HTTP "GET" "/Admin/ListAdmins" responded 404 in 2.4290 ms
+10/20/2020 22:27:01 HTTP "GET" "/" responded 200 in 10.9087 ms
+10/20/2020 22:27:03 HTTP "GET" "/" responded 200 in 11.8438 ms
+10/20/2020 22:27:04 HTTP "GET" "/User/Home/Privacy" responded 200 in 15.4655 ms
+10/20/2020 22:27:04 HTTP "GET" "/" responded 200 in 6.9702 ms
+10/20/2020 22:27:05 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 1.7216 ms
+10/20/2020 22:29:02 Application Starting Up
+10/20/2020 22:29:05 Migrations Complete
+10/20/2020 22:29:05 Role "c6318699-2565-460d-9eb4-f7f32c08eb96" validation failed: "DuplicateRoleName".
+10/20/2020 22:29:05 Role "0d65f3a5-438e-496f-8897-fceb6c781b70" validation failed: "DuplicateRoleName".
+10/20/2020 22:29:05 Role "cd765ab5-c3d9-41c7-91ab-a2b1b92a36ef" validation failed: "DuplicateRoleName".
+10/20/2020 22:29:05 Role "e8407af2-3bf1-42c3-b2f6-9f40198636d0" validation failed: "DuplicateRoleName".
+10/20/2020 22:29:06 User "eb491bf3-4505-4744-8fae-7e33f74d88de" validation failed: "DuplicateUserName".
+10/20/2020 22:29:06 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:29:07 HTTP "GET" "/" responded 200 in 283.1703 ms
+10/20/2020 22:29:09 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 8.6115 ms
+10/20/2020 22:33:04 Application Starting Up
+10/20/2020 22:33:07 Migrations Complete
+10/20/2020 22:33:08 Role "5e73976f-efa2-4ed5-b99d-2365bfba25dd" validation failed: "DuplicateRoleName".
+10/20/2020 22:33:08 Role "80cfeac3-e098-43da-92f4-1ec5c134b970" validation failed: "DuplicateRoleName".
+10/20/2020 22:33:08 Role "88203dbd-5d36-47cf-8661-0fe928dec826" validation failed: "DuplicateRoleName".
+10/20/2020 22:33:08 Role "3819524b-d854-4e19-be56-7b8ab399bf78" validation failed: "DuplicateRoleName".
+10/20/2020 22:33:08 User "8609b395-303f-4b1e-a486-0319ec782757" validation failed: "DuplicateUserName".
+10/20/2020 22:33:08 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:33:09 HTTP "GET" "/" responded 200 in 306.9024 ms
+10/20/2020 22:33:11 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 8.0049 ms
+10/20/2020 22:33:22 HTTP "GET" "/Admin/ListAdmins" responded 404 in 18.5485 ms
+10/20/2020 22:33:30 HTTP "GET" "/ListAdmins" responded 404 in 4.5643 ms
+10/20/2020 22:34:18 Application Starting Up
+10/20/2020 22:34:21 Migrations Complete
+10/20/2020 22:34:22 Role "e1622d81-0a89-4c88-a019-f27f6806846a" validation failed: "DuplicateRoleName".
+10/20/2020 22:34:22 Role "fe1dc83c-be81-47d6-8cd6-c6ef1a4632bb" validation failed: "DuplicateRoleName".
+10/20/2020 22:34:22 Role "9c2e80c1-133f-44b7-8dd3-f220288a6143" validation failed: "DuplicateRoleName".
+10/20/2020 22:34:22 Role "b49b46dc-82b7-4407-bf30-d872b68c2ead" validation failed: "DuplicateRoleName".
+10/20/2020 22:34:22 User "6f32c40e-22cc-4b87-b5d3-5b8ca0acca4a" validation failed: "DuplicateUserName".
+10/20/2020 22:34:22 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:34:23 HTTP "GET" "/" responded 200 in 300.4100 ms
+10/20/2020 22:34:24 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 13.3758 ms
+10/20/2020 22:34:43 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 23.7291 ms
+10/20/2020 22:35:10 Application Starting Up
+10/20/2020 22:35:13 Migrations Complete
+10/20/2020 22:35:13 Role "5946088f-3876-47ba-9de2-7af468749474" validation failed: "DuplicateRoleName".
+10/20/2020 22:35:13 Role "89fd6dff-3d15-46e2-a700-5d8a84b37ce6" validation failed: "DuplicateRoleName".
+10/20/2020 22:35:13 Role "7e0e3298-9eed-47bc-ac80-f586bd5238a7" validation failed: "DuplicateRoleName".
+10/20/2020 22:35:13 Role "fb919180-8ce9-4d12-8e5d-b2313393559a" validation failed: "DuplicateRoleName".
+10/20/2020 22:35:13 User "dcaaf991-ed63-4f14-b613-28c7385551fa" validation failed: "DuplicateUserName".
+10/20/2020 22:35:13 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:35:14 HTTP "GET" "/" responded 200 in 305.7177 ms
+10/20/2020 22:35:16 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 8.7805 ms
+10/20/2020 22:35:43 Application Starting Up
+10/20/2020 22:35:45 Migrations Complete
+10/20/2020 22:35:46 Role "2d6bb3f1-a83e-46a8-8a79-d2b33c951add" validation failed: "DuplicateRoleName".
+10/20/2020 22:35:46 Role "5aecea0d-a744-4767-9c0e-59480cef43c6" validation failed: "DuplicateRoleName".
+10/20/2020 22:35:46 Role "9bc81102-e2e7-43e8-9fde-c263f7a8dbe5" validation failed: "DuplicateRoleName".
+10/20/2020 22:35:46 Role "97a602fd-7f0e-444f-a050-640500e2f685" validation failed: "DuplicateRoleName".
+10/20/2020 22:35:46 User "f1ef546f-a0af-41b2-b2f0-7ad337a4f63b" validation failed: "DuplicateUserName".
+10/20/2020 22:35:46 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:35:47 HTTP "GET" "/" responded 200 in 273.2741 ms
+10/20/2020 22:35:49 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 8.2608 ms
+10/20/2020 22:35:52 HTTP "GET" "/Admin/ListAdmins" responded 404 in 17.4769 ms
+10/20/2020 22:36:16 Application Starting Up
+10/20/2020 22:36:18 Migrations Complete
+10/20/2020 22:36:19 Role "aa3eafc2-9bcd-4a45-9eda-36e5a029de04" validation failed: "DuplicateRoleName".
+10/20/2020 22:36:19 Role "c976eec3-21f2-46d3-8c0d-773c0d0856c4" validation failed: "DuplicateRoleName".
+10/20/2020 22:36:19 Role "9dbe9097-257e-40f2-9c67-6d082fc812b7" validation failed: "DuplicateRoleName".
+10/20/2020 22:36:19 Role "963b73de-23a7-4e25-8173-b8bef917733c" validation failed: "DuplicateRoleName".
+10/20/2020 22:36:19 User "3c519e4d-943a-4e6d-8f71-1e911689fa9a" validation failed: "DuplicateUserName".
+10/20/2020 22:36:19 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:36:20 HTTP "GET" "/" responded 200 in 283.0232 ms
+10/20/2020 22:36:33 HTTP "GET" "/Admin/ListAdmins" responded 404 in 7.0013 ms
+10/20/2020 22:40:54 Application Starting Up
+10/20/2020 22:40:57 Migrations Complete
+10/20/2020 22:40:58 Role "5f538439-3666-46e0-875b-5c95b9473115" validation failed: "DuplicateRoleName".
+10/20/2020 22:40:58 Role "650592c8-ccc6-4530-a6c8-53068d61c9f1" validation failed: "DuplicateRoleName".
+10/20/2020 22:40:58 Role "a49d8ad2-ee01-4f82-a75b-dc70363185f4" validation failed: "DuplicateRoleName".
+10/20/2020 22:40:58 Role "b33ad8c7-5219-49f4-854a-21d4c931fa65" validation failed: "DuplicateRoleName".
+10/20/2020 22:40:58 User "9991e4fc-b744-4051-93ee-29e159586c57" validation failed: "DuplicateUserName".
+10/20/2020 22:40:58 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:40:59 HTTP "GET" "/" responded 200 in 477.2377 ms
+10/20/2020 22:41:02 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 8.1071 ms
+10/20/2020 22:41:07 HTTP "GET" "/User/Books" responded 200 in 111.1614 ms
+10/20/2020 22:41:11 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 4.3936 ms
+10/20/2020 22:41:45 Application Starting Up
+10/20/2020 22:41:47 Migrations Complete
+10/20/2020 22:41:48 Role "aa8727b7-3460-4d1d-8eae-442d98a72c27" validation failed: "DuplicateRoleName".
+10/20/2020 22:41:48 Role "02123bdb-7ec6-46c0-8d7f-e17258787113" validation failed: "DuplicateRoleName".
+10/20/2020 22:41:48 Role "a1177802-a88f-4033-86b1-38d1f5467bdf" validation failed: "DuplicateRoleName".
+10/20/2020 22:41:48 Role "4ee4d21d-08f5-4eb5-9743-c2eb517b86d4" validation failed: "DuplicateRoleName".
+10/20/2020 22:41:48 User "b7a35d65-6d28-4819-b093-734fda9c1310" validation failed: "DuplicateUserName".
+10/20/2020 22:41:48 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:41:49 HTTP "GET" "/" responded 200 in 285.2185 ms
+10/20/2020 22:41:50 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 9.5333 ms
+10/20/2020 22:42:01 HTTP "GET" "/" responded 200 in 31.5781 ms
+10/20/2020 22:42:02 HTTP "GET" "/User/Books" responded 200 in 150.2745 ms
+10/20/2020 22:42:19 HTTP "GET" "/" responded 200 in 17.9768 ms
+10/20/2020 22:42:22 User logged out.
+10/20/2020 22:42:22 HTTP "POST" "/Identity/Account/Logout?returnUrl=%2F" responded 302 in 84.0031 ms
+10/20/2020 22:42:22 HTTP "GET" "/" responded 200 in 6.7198 ms
+10/20/2020 22:42:23 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 0.7992 ms
+10/20/2020 22:42:25 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 1.6061 ms
+10/20/2020 22:42:25 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 0.4454 ms
+10/20/2020 22:42:28 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 0.6706 ms
+10/20/2020 22:43:00 Application Starting Up
+10/20/2020 22:43:03 Migrations Complete
+10/20/2020 22:43:04 Role "9efe5984-0e74-4eba-a308-63521d2f5738" validation failed: "DuplicateRoleName".
+10/20/2020 22:43:04 Role "674a8835-4ee9-47ef-bf7a-bea8e0eea952" validation failed: "DuplicateRoleName".
+10/20/2020 22:43:04 Role "7bc66e2e-1fe8-477e-8712-04113b55e211" validation failed: "DuplicateRoleName".
+10/20/2020 22:43:04 Role "228b1648-8817-4a38-81ff-b36bc1db1031" validation failed: "DuplicateRoleName".
+10/20/2020 22:43:04 User "1b798796-2c47-41f9-9d20-46f3b8d35ebb" validation failed: "DuplicateUserName".
+10/20/2020 22:43:04 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:43:05 HTTP "GET" "/" responded 200 in 296.8415 ms
+10/20/2020 22:43:07 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 5.7281 ms
+10/20/2020 22:43:09 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 4.5904 ms
+10/20/2020 22:43:09 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 2.4102 ms
+10/20/2020 22:43:10 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 0.9391 ms
+10/20/2020 22:43:22 Application Starting Up
+10/20/2020 22:43:24 Migrations Complete
+10/20/2020 22:43:25 Role "7cd81456-3f89-459a-8154-10d0cf34a326" validation failed: "DuplicateRoleName".
+10/20/2020 22:43:25 Role "c747e4c1-42f1-40e8-89f8-2e5bc52be155" validation failed: "DuplicateRoleName".
+10/20/2020 22:43:25 Role "08593b58-d1b2-4937-90be-84f954883824" validation failed: "DuplicateRoleName".
+10/20/2020 22:43:25 Role "a8da0198-725e-4358-a899-5f8979be3e33" validation failed: "DuplicateRoleName".
+10/20/2020 22:43:25 User "4ba8cc92-74ce-4182-ae47-42634f148221" validation failed: "DuplicateUserName".
+10/20/2020 22:43:25 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:43:27 HTTP "GET" "/" responded 200 in 260.8975 ms
+10/20/2020 22:43:29 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 4.4514 ms
+10/20/2020 22:43:33 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 3.7874 ms
+10/20/2020 22:43:42 HTTP "GET" "/Admin/ListAdmins" responded 404 in 2.4787 ms
+10/20/2020 22:55:03 Application Starting Up
+10/20/2020 22:55:06 Migrations Complete
+10/20/2020 22:55:06 Role "d38d1b05-1b14-4e6e-be96-3444f822a6da" validation failed: "DuplicateRoleName".
+10/20/2020 22:55:06 Role "24ee8b9f-d054-469b-8622-dcd9207b1ce6" validation failed: "DuplicateRoleName".
+10/20/2020 22:55:06 Role "605942b7-35d6-4fc7-95ef-0bccf100c322" validation failed: "DuplicateRoleName".
+10/20/2020 22:55:06 Role "f404a73b-c0b0-47eb-87b6-9fe49cc1379d" validation failed: "DuplicateRoleName".
+10/20/2020 22:55:06 User "370a3a4f-b407-48b7-abc8-0fc743ba017b" validation failed: "DuplicateUserName".
+10/20/2020 22:55:06 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:55:08 HTTP "GET" "/" responded 200 in 271.3474 ms
+10/20/2020 22:55:13 HTTP "GET" "/User/Books" responded 200 in 151.0187 ms
+10/20/2020 22:55:21 HTTP "GET" "/Admin/ListRoles" responded 404 in 5.0764 ms
+10/20/2020 22:57:33 Application Starting Up
+10/20/2020 22:57:35 Migrations Complete
+10/20/2020 22:57:36 Role "db575fba-f760-4464-9d95-9f33a30b2255" validation failed: "DuplicateRoleName".
+10/20/2020 22:57:36 Role "a3be17c8-15c8-4d14-82ce-f228f858f330" validation failed: "DuplicateRoleName".
+10/20/2020 22:57:36 Role "855d28e3-bc0e-4961-97d7-24155c0798e3" validation failed: "DuplicateRoleName".
+10/20/2020 22:57:36 Role "d048dd29-6a85-4103-ba82-5b528cbf1665" validation failed: "DuplicateRoleName".
+10/20/2020 22:57:36 User "2db1958f-4262-46a0-9635-d6f743a6e451" validation failed: "DuplicateUserName".
+10/20/2020 22:57:36 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:57:38 HTTP "GET" "/" responded 200 in 265.0047 ms
+10/20/2020 22:57:41 HTTP "GET" "/Admin/Admin/ListAdmins" responded 404 in 4.8972 ms
+10/20/2020 22:57:48 HTTP "GET" "/Admin/Admin/ListRoles" responded 404 in 4.1682 ms
+10/20/2020 22:57:57 HTTP "GET" "/Admin/ListRoles" responded 404 in 2.0165 ms
+10/20/2020 22:58:03 HTTP "GET" "/" responded 200 in 19.9603 ms
+10/20/2020 22:58:05 HTTP "GET" "/User/Books" responded 200 in 168.1795 ms
+10/20/2020 22:58:16 HTTP "GET" "/Admin/ListRoles" responded 404 in 1.7026 ms
+10/20/2020 22:59:01 Application Starting Up
+10/20/2020 22:59:04 Migrations Complete
+10/20/2020 22:59:05 Role "54a4bf04-bb00-4878-9613-899bc7f2a0a6" validation failed: "DuplicateRoleName".
+10/20/2020 22:59:05 Role "25ad93f4-0a5a-4cec-b688-0eaf016268a1" validation failed: "DuplicateRoleName".
+10/20/2020 22:59:05 Role "067a14fd-30c2-427f-bc87-7da023d0b68f" validation failed: "DuplicateRoleName".
+10/20/2020 22:59:05 Role "e58e544d-20c0-402a-909c-2c6bb21d48a7" validation failed: "DuplicateRoleName".
+10/20/2020 22:59:05 User "a7a29169-090c-4cb4-b87d-9b1c2beb7031" validation failed: "DuplicateUserName".
+10/20/2020 22:59:05 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 22:59:07 HTTP "GET" "/" responded 200 in 272.2316 ms
+10/20/2020 22:59:08 HTTP "GET" "/Admin/Administration/ListRoles" responded 404 in 4.0987 ms
+10/20/2020 22:59:19 HTTP "GET" "/Administration/ListRoles" responded 404 in 4.1111 ms
+10/20/2020 22:59:35 HTTP "GET" "/Admin/ListRoles" responded 404 in 1.0778 ms
+10/20/2020 23:00:02 Application Starting Up
+10/20/2020 23:00:05 Migrations Complete
+10/20/2020 23:00:06 Role "7d78d9ae-d7fd-4f42-baca-69df53171a1f" validation failed: "DuplicateRoleName".
+10/20/2020 23:00:06 Role "bbfa9d44-381c-4f33-8d14-c114226dd978" validation failed: "DuplicateRoleName".
+10/20/2020 23:00:06 Role "b4dd713b-efac-4211-b4b5-d1b70ee5ad41" validation failed: "DuplicateRoleName".
+10/20/2020 23:00:06 Role "2d21c442-8d4a-42b5-ba21-8aa8eeaf347c" validation failed: "DuplicateRoleName".
+10/20/2020 23:00:06 User "1f0fef8c-1b81-4b63-a10e-a17d9aabd411" validation failed: "DuplicateUserName".
+10/20/2020 23:00:06 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 23:00:08 HTTP "GET" "/" responded 200 in 285.4043 ms
+10/20/2020 23:00:10 HTTP "GET" "/User/Books" responded 200 in 144.2679 ms
+10/20/2020 23:00:12 HTTP "GET" "/Admin/Administration/ListRoles" responded 404 in 3.5988 ms
+10/20/2020 23:00:17 HTTP "GET" "/Admin/Administration/ListRoles" responded 404 in 0.9943 ms
+10/20/2020 23:00:26 HTTP "GET" "/Administration/ListRoles" responded 404 in 0.8136 ms
+10/20/2020 23:01:56 Application Starting Up
+10/20/2020 23:01:59 Migrations Complete
+10/20/2020 23:02:00 Role "597ebdac-0452-45cf-bae9-e636599379ca" validation failed: "DuplicateRoleName".
+10/20/2020 23:02:00 Role "6852b4c1-da96-4ebf-bc2e-d792715e71cc" validation failed: "DuplicateRoleName".
+10/20/2020 23:02:00 Role "cd50cc0e-c276-4794-9d49-060bf1c91f9b" validation failed: "DuplicateRoleName".
+10/20/2020 23:02:00 Role "2052c779-2daf-497f-baf7-fff63da856fa" validation failed: "DuplicateRoleName".
+10/20/2020 23:02:00 User "664baba0-8c9b-41ea-801c-5e1cb7930702" validation failed: "DuplicateUserName".
+10/20/2020 23:02:00 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 23:02:02 HTTP "GET" "/" responded 404 in 57.9162 ms
+10/20/2020 23:03:55 Application Starting Up
+10/20/2020 23:03:58 Migrations Complete
+10/20/2020 23:03:58 Role "0d2a395d-4320-4d4a-97e1-6418a1ca0b06" validation failed: "DuplicateRoleName".
+10/20/2020 23:03:58 Role "19c7ca66-45cd-47a3-af33-9d56352fc556" validation failed: "DuplicateRoleName".
+10/20/2020 23:03:58 Role "3fc98553-123f-4f67-b01e-67a26e45f7b5" validation failed: "DuplicateRoleName".
+10/20/2020 23:03:58 Role "71edd9c3-165a-41ac-bb6d-80008a48452f" validation failed: "DuplicateRoleName".
+10/20/2020 23:03:58 User "35cff21d-853e-4799-9373-b3db76dc92ec" validation failed: "DuplicateUserName".
+10/20/2020 23:03:58 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 23:04:00 HTTP "GET" "/" responded 200 in 297.3215 ms
+10/20/2020 23:04:02 HTTP "GET" "/Admin/Administration/ListRoles" responded 200 in 152.0270 ms
+10/20/2020 23:05:38 Application Starting Up
+10/20/2020 23:05:41 Migrations Complete
+10/20/2020 23:05:41 Role "f3561ef2-5141-4ad4-b1a8-df52e7609d76" validation failed: "DuplicateRoleName".
+10/20/2020 23:05:41 Role "e6ce94df-5032-4ea0-9930-b248d62f5b97" validation failed: "DuplicateRoleName".
+10/20/2020 23:05:41 Role "1aa92dca-7441-4907-9a5d-f2aa3f9d403f" validation failed: "DuplicateRoleName".
+10/20/2020 23:05:41 Role "9b10ea18-ab93-4bc8-8fce-397363f92fa5" validation failed: "DuplicateRoleName".
+10/20/2020 23:05:41 User "5b55dbff-e93f-4050-918c-99bd40ecd5a8" validation failed: "DuplicateUserName".
+10/20/2020 23:05:41 User "29f95a5f-4c4a-4f32-b3f0-98586424f868" is already in role "Admin".
+10/20/2020 23:05:43 HTTP "GET" "/" responded 200 in 264.2352 ms
+10/20/2020 23:05:46 HTTP "GET" "/Admin/Administration/ListRoles" responded 200 in 80.3322 ms
+10/20/2020 23:05:56 HTTP "GET" "/" responded 200 in 26.6117 ms
