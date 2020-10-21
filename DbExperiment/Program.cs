@@ -29,7 +29,7 @@ namespace DbExperiment
             
 
             Log.Information("Application Starting Up");
-            Log.Information("This for a test.");
+            
 
 
             //auto apply migrations

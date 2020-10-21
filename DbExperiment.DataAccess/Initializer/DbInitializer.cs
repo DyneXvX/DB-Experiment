@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using DbExperiment.Data;
 using DbExperiment.Models;
 using DbExperiment.Utility;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage;
+using Serilog;
 
 namespace DbExperiment.DataAccess.Initializer
 {
@@ -18,7 +13,8 @@ namespace DbExperiment.DataAccess.Initializer
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
 
-        public DbInitializer(ApplicationDbContext db, UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
+        public DbInitializer(ApplicationDbContext db, UserManager<IdentityUser> userManager,
+            RoleManager<IdentityRole> roleManager)
         {
             _db = db;
             _userManager = userManager;
@@ -27,7 +23,12 @@ namespace DbExperiment.DataAccess.Initializer
 
         public void Initialize()
         {
-            //if(_db.Roles.Any(r =>r.Name == Constants.RoleAdmin)) return;
+            if (_db.Roles.Any(r => r.Name == Constants.RoleAdmin))
+            {
+                Log.Information("Roles are already done.");
+                return;
+            }
+
 
             _roleManager.CreateAsync(new IdentityRole(Constants.RoleAdmin)).GetAwaiter().GetResult();
             _roleManager.CreateAsync(new IdentityRole(Constants.RoleManager)).GetAwaiter().GetResult();
@@ -38,16 +39,11 @@ namespace DbExperiment.DataAccess.Initializer
             {
                 UserName = "Admin",
                 Email = "admin@gmail.com"
-                
-
-
             }, "Admin123").GetAwaiter().GetResult();
 
-            AdminUser user = _db.AdminUser.FirstOrDefault(u => u.Email == "admin@gmail.com");
+            var user = _db.AdminUser.FirstOrDefault(u => u.Email == "admin@gmail.com");
 
             _userManager.AddToRoleAsync(user, Constants.RoleAdmin).GetAwaiter().GetResult();
-
-
         }
     }
 }
