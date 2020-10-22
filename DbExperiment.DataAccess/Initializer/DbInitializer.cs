@@ -23,11 +23,9 @@ namespace DbExperiment.DataAccess.Initializer
 
         public void Initialize()
         {
-            if (_db.Roles.Any(r => r.Name == Constants.RoleAdmin))
-            {
-                Log.Information("Roles are already done.");
-                return;
-            }
+            if (_db.Roles.Any(r => r.Name == Constants.RoleAdmin)) return;
+            
+
 
 
             _roleManager.CreateAsync(new IdentityRole(Constants.RoleAdmin)).GetAwaiter().GetResult();
@@ -35,13 +33,13 @@ namespace DbExperiment.DataAccess.Initializer
             _roleManager.CreateAsync(new IdentityRole(Constants.RoleUser)).GetAwaiter().GetResult();
             _roleManager.CreateAsync(new IdentityRole(Constants.RoleEmployee)).GetAwaiter().GetResult();
 
-            _userManager.CreateAsync(new AdminUser
+            _userManager.CreateAsync(new ApplicationUser
             {
                 UserName = "Admin",
                 Email = "admin@gmail.com"
             }, "Admin123").GetAwaiter().GetResult();
 
-            var user = _db.AdminUser.FirstOrDefault(u => u.Email == "admin@gmail.com");
+            var user = _db.ApplicationUser.FirstOrDefault(u => u.Email == "admin@gmail.com");
 
             _userManager.AddToRoleAsync(user, Constants.RoleAdmin).GetAwaiter().GetResult();
         }

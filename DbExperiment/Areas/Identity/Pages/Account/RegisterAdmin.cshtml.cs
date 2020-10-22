@@ -88,7 +88,7 @@ namespace DbExperiment.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new AdminUser
+                var user = new ApplicationUser()
                 {
                     UserName = Input.FirstName,
                     Email = Input.Email,

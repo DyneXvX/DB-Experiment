@@ -30,6 +30,9 @@ namespace DbExperiment.Models
         [Display(Name ="Postal Code")]
         public string PostalCode { get; set; }
 
+        [Display(Name = "Test")]
+        public string Test { get; set; }
+
         [NotMapped] 
         public string Role { get; set; }
     }
