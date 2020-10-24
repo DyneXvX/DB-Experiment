@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<DbExperiment.Models.ApplicationUser>
+
 @{
     ViewData["Title"] = "ListUsers";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -11,7 +12,9 @@
         <h2 class="text-info">Users List</h2>
     </div>
     <div class="col-6 text-right">
-        <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-info">&nbsp; New Account</a>
+        <a asp-area="Identity" asp-page="/Account/RegisterAdmin" class="btn btn-info">
+            <i class="fas fa-plus"></i>&nbsp; New Account
+        </a>
     </div>
 </div>
 <br/>
@@ -45,9 +48,11 @@
                     }
                 </td>
                 <td>
-                    @if (user.LockoutEnd == null && user.LockoutEnd < DateTime.Now)
+                    @if (user.LockoutEnd == null || user.LockoutEnd < DateTime.Now)
                     {
-                        <a type="button" class="btn btn-primary" href="@Url.Action("Edit/"+user.Id)"></a>
+                        <a type="button" class="btn btn-primary" href="@Url.Action("Edit/" + user.Id)">
+                            <i class="fas fa-edit"></i>
+                        </a>
                     }
                 </td>
                 
