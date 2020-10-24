@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Net.Mime;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using DbExperiment.Data;
+using DbExperiment.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace DbExperiment.Areas.Identity.Pages.Account
 {
@@ -20,7 +25,7 @@ namespace DbExperiment.Areas.Identity.Pages.Account
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
-
+        
         public LoginModel(SignInManager<IdentityUser> signInManager, 
             ILogger<LoginModel> logger,
             UserManager<IdentityUser> userManager)
@@ -45,9 +50,9 @@ namespace DbExperiment.Areas.Identity.Pages.Account
             [Required]
             public string UserName { get; set; }
 
-            //[Required]
-            //[EmailAddress]
-            //public string Email { get; set; }
+            [Required]
+            [EmailAddress]
+            public string Email { get; set; }
 
             [Required]
             [DataType(DataType.Password)]
@@ -82,10 +87,28 @@ namespace DbExperiment.Areas.Identity.Pages.Account
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                var result = await _signInManager.PasswordSignInAsync(Input.UserName, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                var result = await _signInManager.PasswordSignInAsync(Input.UserName,Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
+                    var user = await _signInManager.UserManager.FindByEmailAsync(Input.Email);
+
+                    var isAdmin = await _userManager.IsInRoleAsync(user,"Admin");
+
+                    if (isAdmin == true)
+                    {
+                        Log.Information("User is in Admin Role");
+                        return RedirectToAction("Index", "Administration", new {area = "Admin"});
+                    }
+                    
+                    
+                    //var userId = _userManager.GetUserIdAsync(user);
+                    //var userRole = _userManager.GetRolesAsync(userId);
+                    //IList<string> roles = await _signInManager.UserManager.GetRolesAsync(user);
+                    
+                    
                     _logger.LogInformation("User logged in.");
+
+
                     return LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)
