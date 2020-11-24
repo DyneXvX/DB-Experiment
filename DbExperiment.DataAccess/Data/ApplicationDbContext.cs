@@ -18,7 +18,7 @@ namespace DbExperiment.Data
         public DbSet<Categories> Categories { get; set; }
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
 
-
+        public DbSet<AnotherUser> AnotherUsers { get; set; }
 
     }
 }
